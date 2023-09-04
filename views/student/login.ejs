@@ -1,0 +1,23 @@
+<a href="/" class="text-dark"><i class="fa-solid fa-angles-left"></i>Back</a>
+
+<% if (error) { %>
+  <div class="error-message">
+      <%= error %>
+  </div>
+<% } %>
+
+<h3>Student Login</h3>
+<div class="teachLog">
+  <form method="POST" class="teachForm">
+      <div class="form-group">
+        <label for="roll" class="form-label">Roll no : </label>
+        <input type="number" name="roll" class="form-control" id="roll">
+      </div>
+      <div class="form-group">
+        <label for="dob" class="form-label">Date of Birth : </label>
+        <input type="date" name="dob" class="form-control" id="dob">
+      </div>
+      <a><button type="submit" class="loginbtn">Submit</button></a>
+  </form>
+</div>
+
